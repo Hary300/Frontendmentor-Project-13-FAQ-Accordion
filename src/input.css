@@ -33,3 +33,7 @@
 .items.active button img.minus-btn {
   @apply opacity-100 rotate-180;
 }
+
+.items.active p {
+  @apply mb-5;
+}
