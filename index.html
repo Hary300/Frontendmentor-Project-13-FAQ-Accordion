@@ -31,32 +31,145 @@
       }
     </style>
   </head>
-  <body>
-    <div class="text-amber-500 font-WorkSans">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, laudantium
-      itaque. Nisi ex cupiditate eveniet. Aut necessitatibus fugit eligendi,
-      dolorum eum sunt molestiae quam quibusdam corporis magni veniam quos nam
-      rerum! Exercitationem sed eaque odit nobis sint fuga sunt expedita, quos
-      nostrum maxime alias eius obcaecati temporibus molestiae praesentium
-      velit.
+  <body
+    class="flex flex-col gap-3 relative bg-[#efe6f8] justify-center items-center min-h-screen p-5 font-WorkSans text-[#200d26] text-[16px]"
+  >
+    <img
+      src="./assets/images/background-pattern-mobile.svg"
+      alt="purple-patern"
+      class="absolute w-full -z-1 top-0 md:hidden"
+    />
+
+    <img
+      src="./assets/images/background-pattern-desktop.svg"
+      alt="purple-patern"
+      class="absolute w-full -z-1 top-0 md:block"
+    />
+    <div class="container bg-[#ffffff] p-5 rounded-2xl max-w-132.5">
+      <header class="flex gap-5">
+        <img
+          src="./assets/images/icon-star.svg"
+          alt="purple-start"
+          class="w-7"
+        />
+        <h1 class="text-3xl font-bold">FAQs</h1>
+      </header>
+      <!-- accordion -->
+      <!-- item 1 -->
+      <div class="items">
+        <button
+          class="relative flex justify-between py-3 w-full items-center cursor-pointer gap-3"
+        >
+          <h2 class="text font-semibold text-left">
+            What is Frontend Mentor and how will it help me?
+          </h2>
+          <img
+            src="./assets/images/icon-plus.svg"
+            alt="plus-button"
+            class="plus-btn transition-all opacity-100"
+          />
+
+          <img
+            src="./assets/images/icon-minus.svg"
+            alt="minus-button"
+            class="absolute right-0 minus-btn transition-all opacity-0"
+          />
+        </button>
+        <p class="text-[#200d2696] p-hidden">
+          Frontend Mentor offers realistic coding challenges to help developers
+          improve their frontend coding skills with projects in HTML, CSS, and
+          JavaScript. It's suitable for all levels and ideal for portfolio
+          building.
+        </p>
+      </div>
+
+      <!-- item 2 -->
+      <div class="items">
+        <button
+          class="relative flex justify-between py-3 w-full items-center cursor-pointer gap-3"
+        >
+          <h2 class="text font-semibold text-left">Is Frontend Mentor free?</h2>
+          <img
+            src="./assets/images/icon-plus.svg"
+            alt="plus-button"
+            class="plus-btn transition-all opacity-100"
+          />
+
+          <img
+            src="./assets/images/icon-minus.svg"
+            alt="minus-button"
+            class="absolute right-0 minus-btn transition-all opacity-0"
+          />
+        </button>
+        <p class="text-[#200d2696] p-hidden">
+          Yes, Frontend Mentor offers both free and premium coding challenges,
+          with the free option providing access to a range of projects suitable
+          for all skill levels.
+        </p>
+      </div>
+
+      <!-- item 3 -->
+      <div class="items">
+        <button
+          class="relative flex justify-between py-3 w-full items-center cursor-pointer gap-3"
+        >
+          <h2 class="text font-semibold text-left">
+            Can I use Frontend Mentor projects in my portfolio?
+          </h2>
+          <img
+            src="./assets/images/icon-plus.svg"
+            alt="plus-button"
+            class="plus-btn transition-all opacity-100"
+          />
+
+          <img
+            src="./assets/images/icon-minus.svg"
+            alt="minus-button"
+            class="absolute right-0 minus-btn transition-all opacity-0"
+          />
+        </button>
+        <p class="text-[#200d2696] p-hidden">
+          Yes, you can use projects completed on Frontend Mentor in your
+          portfolio. It's an excellent way to showcase your skills to potential
+          employers!
+        </p>
+      </div>
+
+      <!-- item 4 -->
+      <div class="items">
+        <button
+          class="relative flex justify-between py-3 w-full items-center cursor-pointer gap-3"
+        >
+          <h2 class="text font-semibold text-left">
+            How can I get help if I'm stuck on a challenge?
+          </h2>
+          <img
+            src="./assets/images/icon-plus.svg"
+            alt="plus-button"
+            class="plus-btn transition-all opacity-100"
+          />
+
+          <img
+            src="./assets/images/icon-minus.svg"
+            alt="minus-button"
+            class="absolute right-0 minus-btn transition-all opacity-0"
+          />
+        </button>
+        <p class="text-[#200d2696] p-hidden">
+          The best place to get help is inside Frontend Mentor's Discord
+          community. There's a help channel where you can ask questions and seek
+          support from other community members.
+        </p>
+      </div>
+
+      <!-- limit -->
     </div>
-    FAQs What is Frontend Mentor, and how will it help me? Frontend Mentor
-    offers realistic coding challenges to help developers improve their frontend
-    coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
-    all levels and ideal for portfolio building. Is Frontend Mentor free? Yes,
-    Frontend Mentor offers both free and premium coding challenges, with the
-    free option providing access to a range of projects suitable for all skill
-    levels. Can I use Frontend Mentor projects in my portfolio? Yes, you can use
-    projects completed on Frontend Mentor in your portfolio. It's an excellent
-    way to showcase your skills to potential employers! How can I get help if
-    I'm stuck on a Frontend Mentor challenge? The best place to get help is
-    inside Frontend Mentor's Discord community. There's a help channel where you
-    can ask questions and seek support from other community members.
 
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a href="https://github.com/Hary300" target="_blank">Hary300</a>.
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

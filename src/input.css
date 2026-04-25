@@ -1,10 +1,35 @@
 @font-face {
   font-family: WorkSans;
   src: url('../assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url('../assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url('../assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+  font-weight: 700;
 }
 
 @import 'tailwindcss';
 
 @theme {
   --font-WorkSans: 'WorkSans';
+}
+
+.p-hidden {
+  @apply h-0 overflow-hidden transition-all duration-300;
+}
+
+.items.active button img.plus-btn {
+  @apply opacity-0 rotate-45;
+}
+
+.items.active button img.minus-btn {
+  @apply opacity-100 rotate-180;
 }
